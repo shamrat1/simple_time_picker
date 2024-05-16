@@ -4,7 +4,7 @@
 
 It is a custom showTimePicker to allow you set a selectableTimePredicate like you do in showDatePicker.
 
-<img src="https://github.com/shamrat1/simple_time_picker/assets/demo.gif" height='300px'>
+<img src="https://github.com/shamrat1/simple_time_picker/blob/main/assets/demo.gif" height='300px'>
 
 ```dart
 showCustomTimePicker(
@@ -18,7 +18,5 @@ showCustomTimePicker(
         time.minute % 10 == 0).then((time) =>
     setState(() => selectedTime = time?.format(context)))
 ```
-
-[DEMO](https://dartpad.dartlang.org/5c32e473c8c1c9687966453d0dcf42de?)
 
 You can see a complete sample in `example/example.dart` file
