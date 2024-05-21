@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_time_picker/simple_time_picker.dart';
+import 'package:simple_predicate_time_picker/simple_predicate_time_picker.dart';
 
 void main() {
   runApp(const MyApp());
