@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'time_picker_widget.dart';
+import 'package:simple_time_picker/simple_time_picker.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Show Custom Time Picker Demo',
       home: CustomTimePickerDemo(),
     );
@@ -20,6 +19,7 @@ class MyApp extends StatelessWidget {
 }
 
 class CustomTimePickerDemo extends StatefulWidget {
+  const CustomTimePickerDemo({super.key});
   @override
   _CustomTimePickerDemoState createState() => _CustomTimePickerDemoState();
 }
@@ -36,7 +36,7 @@ class _CustomTimePickerDemoState extends State<CustomTimePickerDemo> {
           child: InkWell(
             onTap: () =>
                 // DEMO --------------
-                showCustomTimePicker(
+                showSimpleTimePicker(
                     context: context,
                     onFailValidation: (context) =>
                         showMessage(context, 'Unavailable selection.'),
