@@ -4,10 +4,10 @@
 
 It is a custom showTimePicker to allow you set a selectableTimePredicate like you do in showDatePicker.
 
-<img src="https://github.com/shamrat1/simple_time_picker/blob/main/assets/demo.gif" height='300px'>
+<img src="https://raw.githubusercontent.com/shamrat1/simple_time_picker/main/assets/demo.gif" height='300px'>
 
 ```dart
-showCustomTimePicker(
+showSimpleTimePicker(
     context: context,
     // It is a must if you provide selectableTimePredicate
     onFailValidation: (context) => print('Unavailable selection'),
@@ -19,4 +19,4 @@ showCustomTimePicker(
     setState(() => selectedTime = time?.format(context)))
 ```
 
-You can see a complete sample in `example/example.dart` file
+You can see a complete sample in `example/lib/main.dart` file
