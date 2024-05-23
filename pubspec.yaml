@@ -1,6 +1,6 @@
 name: simple_predicate_time_picker
 description: "A material time picker with predicate, just like in date picker."
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/shamrat1/simple_time_picker.git
 
 environment:
