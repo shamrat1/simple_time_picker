@@ -2030,7 +2030,7 @@ class _TimePickerDialogState extends State<_TimePickerDialog> {
     // parts of the time picker scale up with textScaleFactor, we cap the factor
     // to 1.1 as that provides enough space to reasonably fit all the content.
     final double textScaleFactor =
-        math.min(MediaQuery.of(context).textScaleFactor, 1.1);
+        math.min(MediaQuery.textScalerOf(context).scale(1.0), 1.1);
 
     late double timePickerWidth;
     late double timePickerHeight;
@@ -2094,8 +2094,8 @@ class _TimePickerDialogState extends State<_TimePickerDialog> {
         //       : MaterialLocalizations.of(context).dialModeButtonLabel,
         // ),
         Expanded(
-          child: ButtonBar(
-            layoutBehavior: ButtonBarLayoutBehavior.constrained,
+          child: OverflowBar(
+            // layoutBehavior: ButtonBarLayoutBehavior.constrained,
             children: <Widget>[
               TextButton(
                 style: TimePickerTheme.of(context).cancelButtonStyle,
