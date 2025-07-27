@@ -1,4 +1,4 @@
-## 1.0.2
+## 1.1.0
 
 * Flutter 3.22 releated deprecation issues fixed
 
